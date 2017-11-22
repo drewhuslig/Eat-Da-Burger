@@ -1,54 +1,53 @@
 <div class="container">
-	<div class="row">
+	<div class="row center">
 		<h1>Burgers!</h1>
 	</div>
+	<div class="center">
+		<img src="assets/img/burger.png" alt="">
+	</div>
 	<div class="row">
-		<div class="col-sm-4">
-		</div>
-		<div class="col-sm-4">
-			<h2>Freshy-Fresh Burgers!</h2>
-			<div id="newburg" class="row">
-			<div class="col-sm-4">
-				<ul>
-					{{#each burgers}} {{#unless this.devoured}}
-					<li>
-						{{this.id}}: {{this.burger_name}}
+		<div class="col-sm-6">
+			<h2>Hot Steamin' Burgers!</h2>
+			<div class="row">
+				<div class="col-sm-10">
+					<ul>
+						{{#each burgers}} {{#unless this.devoured}}
+						<li>
+							{{this.id}}: {{this.burger_name}}
 
-						<form action="/{{this.id}}?_method=PUT" method="POST">
-							<input type="hidden" name="devoured" value="true">
-							<button type="submit">Eat This!</button>
-						</form>
-					</li>
-					{{/unless}} {{/each}}
-				</ul>
-			</div>
-
-			<div class="col-sm-4">
-			</div>
-
-		</div>
-			<div class="col-sm-4">
-			</div>
-			<div id="eaten burgers" class="col-sm-4">
-				<h2>Eaten Burgs</h2>
-				<ul>
-					{{#each burgers}} {{#if this.devoured}}
-					<li>
-						{{this.id}}: {{this.burger_name}}
-					</li>
-					{{/if}} {{/each}}
-				</ul>
+							<form action="/{{this.id}}?_method=PUT" method="POST">
+								<input type="hidden" name="devoured" value="true">
+								<button type="submit">Eat This!</button>
+							</form>
+						</li>
+						{{/unless}} {{/each}}
+					</ul>
+				</div>
 			</div>
 		</div>
-		<div id="addBurger" class="row">
-			<h2>Add a Burger</h2>
-			<form class="create-update-form" action="/" method="POST">
+
+		<div class="col-sm-6">
+			<h2>Eaten Burgers</h2>
+			{{#each burgers}} {{#if this.devoured}}
+			<ul>
+				{{this.id}}: {{this.burger_name}}
+			</ul>
+			{{/if}} {{/each}}
+		</div>
+
+	</div>
+
+	<div id="addBurger" class="row">
+		<div class="col-md-12">
+			<h2 class="center">Add a Burger</h2>
+			<form class="create-update-form center" action="/" method="POST">
 
 				<div class="form-group">
 					<label for="ca">Burger Name:</label>
 					<input type="text" id="ca" name="burger_name">
 				</div>
-				<button type="submit">Add Burger</button>
+				<button class="center" type="submit">Add Burger</button>
 			</form>
 		</div>
 	</div>
+</div>

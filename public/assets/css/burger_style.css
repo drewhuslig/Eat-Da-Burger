@@ -1,0 +1,12 @@
+body {
+    background-color: lightsalmon;
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
+.center {
+    text-align: center;
+}

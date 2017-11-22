@@ -1,0 +1,10 @@
+insert into burgers values (id, 'Bacon Cheese Burger', false, CURRENT_TIMESTAMP);
+insert into burgers values (id, 'Blue Cheese Burger', false, CURRENT_TIMESTAMP);
+insert into burgers values (id, 'Spicy Shitaki Burger', false, CURRENT_TIMESTAMP);
+insert into burgers values (id, 'Royal Burger', false, CURRENT_TIMESTAMP);
+insert into burgers values (id, 'Double Cheese Burger', false, CURRENT_TIMESTAMP);
+insert into burgers values (id, 'Double Bacon Cheese Burger', false, CURRENT_TIMESTAMP);
+insert into burgers values (id, 'Black Bean Burger', false, CURRENT_TIMESTAMP);
+insert into burgers values (id, 'All American Burger', false, CURRENT_TIMESTAMP);
+insert into burgers values (id, 'Sweet BBQ Bacon Burger', false, CURRENT_TIMESTAMP);
+insert into burgers values (id, 'Turkey Burger', false, CURRENT_TIMESTAMP);
